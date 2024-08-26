@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: front-end-deployment
+  name: frontend-deployment
+  namespace: dev
 spec:
   replicas: 1
   selector:
@@ -13,7 +14,12 @@ spec:
         app: example
     spec:
       containers:
-      - name: front-end
-        image: front-end:latest
+      - image: frontend-dev
+        name: myapp
+        imagePullPolicy: Never #makes it so it looks at your local registry
+        # imagePullPolicy: IfNotPresent   
         ports:
         - containerPort: 8080
+        # 0.0.0.0:8080->80/tcp add this here...
+      # imagePullSecrets:
+      #   - name: docker-secret

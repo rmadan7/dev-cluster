@@ -2,7 +2,7 @@
 kubectl apply -f <deployment file>
 
 # Architecture Diagram
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/rmadan7/dev-cluster/blob/master/kube_arch_diagram.png)
 
 # Logging
 kubectl describe pods <name-of-pod>

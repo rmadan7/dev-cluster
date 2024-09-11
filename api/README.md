@@ -1,6 +1,6 @@
 # API Methods
-GET - The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
-HEAD - The HEAD method asks for a response identical to a GET request, but without the response body.
+GET - The GET method requests a representation of the specified resource. Requests using GET should only retrieve data. < br / >
+HEAD - The HEAD method asks for a response identical to a GET request, but without the response body. < br / >
 POST - The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server.
 PUT - The PUT method replaces all current representations of the target resource with the request content.
 DELETE - The DELETE method deletes the specified resource.
